@@ -220,6 +220,10 @@ public class MP4InputStream {
 		for(int i = 0; i<n; i++) {
 			result = (result<<8)|(b[i]&0xFF);
 		}
+		
+		if(!peeked.isEmpty())
+			peeked.clear();
+		
 		return result;
 	}
 
