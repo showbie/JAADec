@@ -34,7 +34,7 @@ public class MP4AudioInputStream extends AsynchronousAudioInputStream {
 	MP4AudioInputStream(InputStream in, AudioFormat format, long length) throws IOException {
 		super(in, format, length);
 		//save to file and create a RandomAccessFile
-		file = new File("/tmp/"+UUID.randomUUID());
+		file = File.createTempFile(UUID.randomUUID().toString(), null);
 		Files.copy(in, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
 		raFile = new RandomAccessFile(file, "r");
 		
