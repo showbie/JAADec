@@ -426,6 +426,9 @@ public class MP4InputStream {
 		while(l<n) {
 			if(in!=null) l += in.skip((n-l));
 			else if(fin!=null) l += fin.skipBytes((int) (n-l));
+
+			if(l==0)
+				break;
 		}
 
 		offset += l;
