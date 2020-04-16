@@ -7,35 +7,16 @@ JAAD is an AAC decoder and MP4 demultiplexer library written completely in Java.
 
 This library is available on Bintray's `jcenter` as a Maven/Gradle download.<br>
 https://bintray.com/dv8fromtheworld/maven/JAADec/view
-<p>
-For Gradle:
 
-```groovy
-repositories {
-  jcenter()
-}
-
-dependencies {
-  compile 'net.sourceforge.jaadec:jaad:0.8.6'
-}
-```
 <p>
 For Maven:
 
 ```xml
-<repositories>
-  <repository>
-    <id>central</id>
-    <name>bintray</name>
-    <url>http://jcenter.bintray.com</url>
-  </repository>
-</repositories>
-
 <dependencies>
   <dependency>
-    <groupId>net.sourceforge.jaadec</groupId>
+    <groupId>com.showbie</groupId>
     <artifactId>jaad</artifactId>
-    <version>0.8.6</version>
+    <version>0.8.6.1</version>
   </dependency>
 </dependencies>
 ```
