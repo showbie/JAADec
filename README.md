@@ -39,3 +39,9 @@ For Maven:
   </dependency>
 </dependencies>
 ```
+
+Publishing to Showbie's github maven central please ensure you created your personal access token.  Follow these instructions located here:  https://github.com/showbie/maven-central-repository
+
+To publish enter the following command:
+
+`GITHUB_REGISTRY_USERNAME=<username> GITHUB_REGISTRY_TOKEN=<your personal access token>  mvn deploy`
