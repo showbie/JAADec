@@ -16,7 +16,7 @@ For Maven:
   <dependency>
     <groupId>com.showbie</groupId>
     <artifactId>jaad</artifactId>
-    <version>0.8.6.1</version>
+    <version>0.8.5.1</version>
   </dependency>
 </dependencies>
 ```
